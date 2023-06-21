@@ -8,8 +8,10 @@ require("dotenv").config();
 
 const { sequelize } = require("../tlp1-segundo-parcial/db");
 
-sequelize.then(() => console.log("Conexion a base de datos exitosa"));
-//.catch((error) => console.log("Error al conectar a base de datos", error));
+sequelize
+
+  .then(() => console.log("Conexion a base de datos exitosa"))
+  .catch((error) => console.log("Error al conectar a base de datos", error));
 
 require("ejs");
 

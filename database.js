@@ -1,4 +1,4 @@
-const { sequelize } = require("sequelize");
+const { sequelize, Model, DataTypes } = require("sequelize");
 
 const sequelize = new sequelize(
   process.env.DB_NAME,
@@ -12,4 +12,6 @@ const sequelize = new sequelize(
 
 module.exports = {
   sequelize,
+  Model,
+  DataTypes,
 };
