@@ -6,7 +6,7 @@ const path = require("path");
 
 require("dotenv").config();
 
-const { sequelize } = require("../tlp1-segundo-parcial/db");
+const { sequelize } = require("./database");
 
 sequelize
 
